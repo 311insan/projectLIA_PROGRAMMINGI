@@ -7,7 +7,7 @@
  */
 public class MultiplayerGameSession extends GameSession
 {
-    int nPlayers;
+    private int nPlayers;
     
     /**
      * Constructor for objects of class MultiplayerGameSession
