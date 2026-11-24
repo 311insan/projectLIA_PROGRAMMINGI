@@ -8,7 +8,6 @@ import java.util.ArrayList;
  */
 public class Library
 {
-    // instance variables - replace the example below with your own
     private ArrayList<Game> games;
     private int nGames;
     private String owner;
@@ -22,13 +21,13 @@ public class Library
         nGames = games.size();
     }
     
-    //Start GameSession
+    //Start GameSession:
     
     public void startGameSession(Game game){
         GameSession gameSession = new GameSession(System.currentTimeMillis(), game);
     }
     
-    //List Games
+    //List Games:
     
     public void listAllGames(){
         if(nGames != 0){
@@ -71,4 +70,22 @@ public class Library
             }
         }
     }
+    
+    //Print Library Details:
+    
+    public void printLibraryDetails(){
+        System.out.println("Owner: " + owner);
+        System.out.println("Number of games in Library: " + nGames);
+    }
+    
+    //Getter & Setter methods for fields:
+    
+    public void setOwner(String ownerName){
+        owner = ownerName;
+    }
+    
+    public String getOwner(){
+        return owner;
+    }
+    
 }

@@ -21,11 +21,20 @@ public class Menu
     }
     
     public static void main(String[] args){
-        start();
+        
     }
     
-    public static void start(){
-        System.out.println("LIA project— Game Libraries");
+    public void start(){
+        boolean exit = false;
         
+        while(!exit){
+            String input = reader.getInput();
+        }
+        
+    }
+    
+    public void welcome(){
+        System.out.println("-LIA Project: Game Library-");
+        System.out.println("To navigate the Menu, input the number associated with an option.");
     }
 }
