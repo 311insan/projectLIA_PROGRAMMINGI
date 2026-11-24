@@ -10,13 +10,14 @@ import java.util.Scanner;
 public class Menu
 {
     private HashMap<String, Library> libraries;
+    private InputReader reader;
 
     /**
      * Constructor for objects of class Menu
      */
     public Menu()
     {
-        
+        reader = new InputReader();
     }
     
     public static void main(String[] args){
