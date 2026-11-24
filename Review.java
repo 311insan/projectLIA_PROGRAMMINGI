@@ -14,9 +14,14 @@ public class Review
     /**
      * Constructor for objects of class Reviews
      */
-    public Review()
+    public Review(String reviewerName, int rating10)
     {
-        
+        this.reviewerName = reviewerName;
+        rating = rating10;
+    }
+    
+    public void addReview(String review){
+        this.review = review;
     }
     
 }

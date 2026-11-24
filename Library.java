@@ -22,18 +22,53 @@ public class Library
         nGames = games.size();
     }
     
+    //Start GameSession
+    
     public void startGameSession(Game game){
-        GameSession gameSession = new GameSession(System.currentTimeMillis());
+        GameSession gameSession = new GameSession(System.currentTimeMillis(), game);
     }
+    
+    //List Games
     
     public void listAllGames(){
         if(nGames != 0){
+            int index = 0;
             for(Game game : games){
-                System.out.println(game.getName());
+                System.out.println(index + ": " + game.getName());
+                index++;
             }
         } else{
             System.out.println("empty");
         }
     }
     
+    public void listOfGenre(String genre){
+        int index = 0;
+        for(Game game : games){
+            if(game.getGenre().equals(genre)){
+                System.out.println(index + ": " + game.getName());
+                index++;
+            }
+        }
+    }
+    
+    public void listOfPlatform(String platform){
+        int index = 0;
+        for(Game game : games){
+            if(game.getPlatform().equals(platform)){
+                System.out.println(index + ": " + game.getName());
+                index++;
+            }
+        }
+    }
+    
+    public void listOfAgeRating(String ageRating){
+        int index = 0;
+        for(Game game : games){
+            if(game.getAgeRating().equals(ageRating)){
+                System.out.println(index + ": " + game.getName());
+                index++;
+            }
+        }
+    }
 }
