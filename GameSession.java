@@ -27,6 +27,5 @@ public class GameSession
     
     public void printLog(){
         System.out.println("-GameSsession log-");
-        
     }
 }

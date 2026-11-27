@@ -60,7 +60,34 @@ public class Game
         return ageRating;
     }
     
-    // Add review:
+    public void setDeveloper(String developer){
+        this.developer = developer;
+    }
     
+    public String getDeveloper(){
+        return developer;
+    }
+    
+    public void setPublisher(String publisher){
+        this.publisher = publisher;
+    }
+    
+    public String getPublisher(){
+        return publisher;
+    }
+    
+    public void setIfMultiplayer(boolean isMultiplayer){
+        this.isMultiplayer = isMultiplayer;
+    }
+    
+    public boolean isMultiplayer(){
+        return isMultiplayer;
+    }
+    
+    // Add review:
+    public void addReview(String reviewerName, int rating10){
+        Review review = new Review(reviewerName, rating10);
+        reviews.add(review);
+    }
     
 }

@@ -33,6 +33,14 @@ public class Menu
         
     }
     
+    public void newLibrary(String owner){
+        //makes new library
+    }
+    
+    public void listAllLibraries(){
+        //prints out all libraries
+    }
+    
     public void welcome(){
         System.out.println("-LIA Project: Game Library-");
         System.out.println("To navigate the Menu, input the number associated with an option.");
